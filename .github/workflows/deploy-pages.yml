@@ -18,7 +18,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: \${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,10 +29,10 @@ jobs:
           from pathlib import Path
           import re
           html = Path("index.html").read_text(encoding="utf-8")
-          scripts = re.findall(r"<script(?:\\s[^>]*)?>(.*?)</script>", html, re.S | re.I)
+          scripts = re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", html, re.S | re.I)
           if not scripts:
               raise SystemExit("No inline application script found")
-          Path("/tmp/talist-inline.js").write_text("\\n".join(scripts), encoding="utf-8")
+          Path("/tmp/talist-inline.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/talist-inline.js
       - name: Configure Pages
