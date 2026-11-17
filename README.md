@@ -54,6 +54,6 @@ The eight lessons are starter examples to shape the learning experience. They ar
 5. **Android:** package the web experience for Android and test on real devices.
 6. **Release preparation:** accessibility, data export/backup, performance, offline behaviour and broader testing.
 
-## Earlier prototype
+## Technical structure
 
-The `src/` and Vite/React files are retained as the earlier UI experiment. The root `index.html` is now the standalone version and does not depend on them.
+The project is intentionally a standalone web app. Its interface and application logic live in the root `index.html` file. There is no Node.js, npm, React, Vite, package manager, build step, or dependency installation required for development, local use, or GitHub Pages deployment.
