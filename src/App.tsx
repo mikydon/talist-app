@@ -1,9 +1,8 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import {
   Activity, ArrowDownRight, ArrowLeft, ArrowRight, BookOpen, Brain,
-  Check, ChevronRight, CircleHelp, Compass, Eye, Flame, GraduationCap,
-  House, Layers3, Lightbulb, Menu, Search, Settings2, Sparkles, Target,
-  X, Zap,
+  Check, ChevronRight, CircleHelp, Compass, Eye, Flame, House, Lightbulb,
+  Menu, Search, Settings2, Sparkles, Target, Zap,
 } from 'lucide-react'
 import { categories, lessons, practiceQuestion, type Lesson } from './data'
 
