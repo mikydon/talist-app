@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#11130f">
 <meta name="description" content="Talist — think deeper, understand more. Explore psychology, human behaviour, critical thinking and deduction.">
 <title>Talist — Think deeper</title>
@@ -11,6 +11,112 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -20%,#343c292e,transparent 42%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}a{color:inherit;text-decoration:none}.app{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:248px;padding:27px 18px;background:#121510;border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:5}.brand{display:flex;align-items:center;gap:11px;padding:0 12px 32px}.brand-mark{width:34px;height:34px;border-radius:11px;background:var(--accent);color:#192012;display:grid;place-items:center;font-weight:900;font-size:19px;box-shadow:0 5px 20px #c3d58b20}.brand-name{font-size:20px;font-weight:750;letter-spacing:-.7px}.brand-tag{font-size:10px;color:var(--muted);letter-spacing:1.7px;text-transform:uppercase}.nav-label{padding:10px 12px 8px;color:#70796b;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:var(--muted);padding:11px 12px;border-radius:11px;text-align:left;display:flex;align-items:center;gap:13px;font-size:13px;font-weight:600;transition:.18s}.nav button:hover{background:#ffffff08;color:var(--text)}.nav button.active{background:#c3d58b16;color:var(--accent)}.nav-ico{width:19px;text-align:center;font-size:16px}.sidebar-bottom{margin-top:auto;padding:14px 12px;border:1px solid var(--line);border-radius:14px;background:#ffffff04}.tiny{font-size:11px;color:var(--muted)}.sidebar-bottom strong{display:block;font-size:13px;margin-bottom:4px}.main{margin-left:248px;min-height:100vh}.topbar{height:72px;border-bottom:1px solid #ffffff0b;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,4vw,58px);position:sticky;top:0;background:#10120fe8;backdrop-filter:blur(18px);z-index:4}.crumb{font-size:12px;color:var(--muted)}.top-actions{display:flex;align-items:center;gap:10px}.streak{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:12px;color:var(--soft)}.avatar{width:31px;height:31px;border-radius:50%;background:#303a25;color:var(--accent);display:grid;place-items:center;font-size:12px;font-weight:700}.content{max-width:1250px;margin:auto;padding:38px clamp(22px,4vw,58px) 80px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-weight:750}.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:4px 0 30px}.hero h1{font-size:clamp(29px,4vw,43px);line-height:1.12;letter-spacing:-1.8px;margin:9px 0 11px;font-weight:680}.hero p{color:var(--muted);max-width:560px;margin:0;font-size:14px}.date-note{font-size:11px;color:var(--muted);white-space:nowrap;padding-bottom:5px}.grid{display:grid;gap:16px}.stats{grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 27px}.stat,.panel,.lesson-card,.category-card{background:linear-gradient(145deg,#1a1e18,#151813);border:1px solid var(--line);border-radius:var(--radius)}.stat{padding:17px 19px}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.stat-value{font-size:26px;font-weight:700;letter-spacing:-1px;margin-top:8px}.stat-foot{font-size:10px;color:#899181;margin-top:1px}.section-head{display:flex;justify-content:space-between;align-items:center;margin:28px 0 13px}.section-head h2{font-size:17px;letter-spacing:-.4px;margin:0;font-weight:650}.text-btn{border:0;background:none;color:var(--accent);font-size:12px;padding:6px}.text-btn:hover{text-decoration:underline}.continue{padding:22px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;position:relative;overflow:hidden}.continue:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #c3d58b17;border-radius:50%;right:95px;top:-155px;box-shadow:0 0 0 24px #c3d58b08,0 0 0 48px #c3d58b05;pointer-events:none}.continue .meta{color:var(--accent);font-size:10px;text-transform:uppercase;letter-spacing:1.4px;font-weight:700}.continue h3{margin:7px 0 5px;font-size:20px;letter-spacing:-.5px}.continue p{margin:0;color:var(--muted);font-size:12px;max-width:550px}.btn{border:1px solid transparent;background:var(--accent);color:#182012;border-radius:10px;padding:10px 16px;font-size:12px;font-weight:750;transition:.18s;white-space:nowrap}.btn:hover{background:#d3e5a0;transform:translateY(-1px)}.btn.secondary{background:#ffffff08;border-color:var(--line);color:var(--soft)}.btn.secondary:hover{background:#ffffff12}.btn.small{padding:8px 12px;font-size:11px}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.lesson-card{padding:17px;display:flex;flex-direction:column;min-height:188px;transition:.2s}.lesson-card:hover,.category-card:hover{transform:translateY(-2px);border-color:#65764b}.card-top{display:flex;justify-content:space-between;align-items:center}.tag{font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);background:#c3d58b12;padding:5px 8px;border-radius:6px;font-weight:700}.bookmark{border:0;background:none;color:#899181;font-size:17px;padding:2px}.bookmark.saved{color:var(--accent)}.lesson-card h3{font-size:15px;margin:14px 0 6px;letter-spacing:-.2px}.lesson-card p{font-size:11px;color:var(--muted);margin:0 0 15px;line-height:1.5}.card-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;color:#899181;font-size:10px}.category-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.category-card{padding:17px;cursor:pointer;transition:.2s;text-align:left;width:100%;color:var(--text);font:inherit}.cat-icon{font-size:21px}.category-card h3{font-size:13px;margin:12px 0 3px}.category-card p{font-size:10px;color:var(--muted);margin:0}.page{display:none}.page.active{display:block;animation:fade .25s ease}@keyframes fade{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}.page-heading{margin-bottom:24px}.page-heading h1{font-size:32px;letter-spacing:-1.2px;margin:8px 0}.page-heading p{color:var(--muted);font-size:13px;margin:0}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.search{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:var(--text);min-width:230px;flex:1;max-width:360px;font-size:12px}.filter{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:9px;padding:9px 12px;font-size:11px}.filter.active{border-color:#718552;color:var(--accent);background:#c3d58b10}.empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius);font-size:13px}.practice-card{max-width:760px;padding:26px}.question-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.practice-card h2{font-size:22px;line-height:1.35;margin:19px 0}.answers{display:grid;gap:9px;margin:22px 0}.answer{width:100%;text-align:left;border:1px solid var(--line);background:#ffffff04;color:var(--soft);padding:14px;border-radius:11px;font-size:13px;transition:.15s}.answer:hover:not(:disabled){border-color:#718552;background:#c3d58b0b}.answer.correct{border-color:#7c9b52;background:#7c9b5218;color:#d9e8c3}.answer.wrong{border-color:#a96c5e;background:#a96c5e18;color:#e9c1b8}.feedback{padding:13px 15px;background:#c3d58b0d;border:1px solid #c3d58b2b;border-radius:10px;color:var(--soft);font-size:12px;margin:12px 0}.feedback strong{color:var(--accent)}.reader{max-width:800px}.back{border:0;background:none;color:var(--muted);padding:0;margin-bottom:22px;font-size:12px}.reader h1{font-size:clamp(30px,4vw,42px);letter-spacing:-1.5px;line-height:1.15;margin:12px 0}.reader .lead{font-size:16px;color:#b9c1b2;line-height:1.7;margin:14px 0 26px}.reader-section{padding:20px 0;border-top:1px solid var(--line)}.reader-section h2{font-size:17px;margin:0 0 10px}.reader-section p,.reader-section li{color:#b5bcae;font-size:13px;line-height:1.8}.example{border-left:2px solid var(--accent2);background:#c3d58b0a;padding:15px 18px;border-radius:0 10px 10px 0;color:#cbd2c2;font-size:13px;margin:15px 0}.takeaways{padding-left:19px}.progress-panel{padding:22px}.progress-line{height:7px;border-radius:99px;background:#ffffff12;overflow:hidden;margin:12px 0}.progress-line span{display:block;height:100%;background:var(--accent);border-radius:99px}.progress-row{display:flex;justify-content:space-between;gap:15px;font-size:12px;color:var(--soft)}.notice{font-size:11px;color:var(--muted);padding:12px 14px;border:1px solid var(--line);border-radius:10px;margin-top:20px}.mobile-nav{display:none}
 @media(max-width:950px){.sidebar{width:210px}.main{margin-left:210px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.sidebar{display:none}.main{margin:0}.topbar{height:60px;padding:0 18px}.content{padding:28px 18px 100px}.hero{display:block}.date-note{margin-top:13px}.stats{gap:9px}.stat{padding:13px}.stat-value{font-size:22px}.stat-top{font-size:9px}.stat-foot{font-size:9px}.continue{grid-template-columns:1fr;padding:18px}.continue .btn{justify-self:start}.cards{grid-template-columns:1fr}.lesson-card{min-height:160px}.category-grid{gap:9px}.category-card{padding:13px}.mobile-nav{position:fixed;display:flex;bottom:0;left:0;right:0;z-index:10;background:#141711f2;border-top:1px solid var(--line);backdrop-filter:blur(18px);justify-content:space-around;padding:8px 5px calc(8px + env(safe-area-inset-bottom))}.mobile-nav button{border:0;background:none;color:var(--muted);font-size:9px;display:grid;gap:3px;justify-items:center;min-width:54px;padding:4px}.mobile-nav button span:first-child{font-size:17px}.mobile-nav button.active{color:var(--accent)}.practice-card{padding:18px}.page-heading h1{font-size:28px}}
+
+/* App-like refinement: compact mobile shell, clear hierarchy and touch-first controls */
+:root{--app-ease:cubic-bezier(.2,.75,.25,1)}
+html{scroll-padding-top:76px}
+button{ -webkit-tap-highlight-color:transparent}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.mobile-brand{display:none;align-items:center;gap:9px}
+.mobile-brand .brand-mark{width:32px;height:32px;border-radius:10px;font-size:17px}
+.mobile-brand-name{font-size:19px;font-weight:780;letter-spacing:-.8px}
+.topbar{isolation:isolate}
+.nav button,.mobile-nav button,.btn,.filter,.answer,.bookmark{touch-action:manipulation}
+.nav button{min-height:44px}
+.btn{min-height:42px}
+.filter{min-height:38px}
+.bookmark{width:38px;height:38px;border-radius:11px}
+.category-card{min-height:132px}
+.lesson-card{border-radius:18px}
+.stat{border-radius:16px}
+.page-heading p,.hero p{line-height:1.65}
+.reader-section p,.reader-section li{font-size:14px}
+.answer{min-height:54px;line-height:1.5}
+.mobile-nav{display:none}
+@media(max-width:680px){
+  html,body{min-height:100%;overscroll-behavior-y:contain}
+  body{background:var(--bg);font-size:14px}
+  .app{min-height:100dvh}
+  .main{margin:0;min-height:100dvh}
+  .topbar{height:64px;padding:0 18px;position:sticky;top:0;z-index:20;background:#11140ff2;border-bottom:1px solid #ffffff0c}
+  .mobile-brand{display:flex}
+  .crumb{display:none}
+  .top-actions{margin-left:auto;gap:8px}
+  .streak{padding:7px 11px;background:#c3d58b0d;border-color:#c3d58b28;font-size:11px}
+  .avatar{display:none}
+  .content{padding:24px 17px calc(112px + env(safe-area-inset-bottom));max-width:620px}
+  .hero{display:block;margin:2px 0 23px}
+  .eyebrow{font-size:9px;letter-spacing:1.7px}
+  .hero h1{font-size:32px;line-height:1.12;letter-spacing:-1.35px;margin:9px 0 9px}
+  .hero p{font-size:13px;max-width:430px}
+  .date-note{margin-top:13px;padding:0;font-size:11px}
+  .grid{gap:11px}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:22px}
+  .stat{padding:12px 10px;min-width:0;border-radius:15px}
+  .stat-top{font-size:9px;line-height:1.35;gap:4px}
+  .stat-top span:last-child{display:none}
+  .stat-value{font-size:21px;margin-top:7px;letter-spacing:-.7px}
+  .stat-foot{font-size:9px;line-height:1.3}
+  .section-head{margin:25px 0 12px}
+  .section-head h2{font-size:16px}
+  .text-btn{font-size:11px}
+  .continue{grid-template-columns:1fr;padding:19px;border-radius:19px;gap:15px}
+  .continue:after{right:-40px;top:-175px}
+  .continue .meta{font-size:9px}
+  .continue h3{font-size:19px;line-height:1.25}
+  .continue p{font-size:12px;line-height:1.55}
+  .continue .btn{justify-self:stretch;text-align:center;min-height:46px}
+  .category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .category-card{padding:14px;min-height:126px;border-radius:16px}
+  .cat-icon{font-size:20px}
+  .category-card h3{font-size:12px;margin:10px 0 3px}
+  .category-card p{font-size:10px;line-height:1.4}
+  .cards{grid-template-columns:1fr;gap:10px}
+  .lesson-card{min-height:0;padding:15px;border-radius:16px}
+  .lesson-card h3{font-size:15px;margin:10px 0 5px}
+  .lesson-card p{font-size:11px;line-height:1.55;margin-bottom:12px}
+  .card-foot{font-size:10px}
+  .page-heading{margin-bottom:18px}
+  .page-heading h1{font-size:29px;letter-spacing:-1.2px;margin:6px 0}
+  .page-heading p{font-size:12px;line-height:1.6}
+  .toolbar{display:grid;grid-template-columns:1fr;gap:9px;margin:16px 0}
+  .search{width:100%;max-width:none;min-width:0;min-height:46px;border-radius:13px;font-size:13px}
+  #filters{display:flex;gap:7px;overflow-x:auto;padding:1px 1px 5px;scrollbar-width:none}
+  #filters::-webkit-scrollbar{display:none}
+  .filter{white-space:nowrap;min-height:36px;padding:8px 12px;border-radius:999px;font-size:10px}
+  .practice-card{padding:18px;border-radius:19px}
+  .question-meta{font-size:10px;gap:10px}
+  .practice-card h2{font-size:19px;line-height:1.4;margin:17px 0}
+  .answers{gap:8px;margin:18px 0}
+  .answer{padding:13px;border-radius:13px;font-size:12px;min-height:52px}
+  .feedback{font-size:12px;line-height:1.6}
+  .progress-panel{padding:17px;border-radius:18px}
+  .progress-panel .section-head{margin:0}
+  .progress-row{font-size:11px}
+  .notice{font-size:10px;line-height:1.6}
+  .reader{padding-bottom:4px}
+  .back{min-height:40px;padding:0 10px;margin:0 0 13px -10px}
+  .reader h1{font-size:32px}
+  .reader .lead{font-size:14px;line-height:1.7}
+  .reader-section{padding:17px 0}
+  .reader-section h2{font-size:16px}
+  .reader-section p,.reader-section li{font-size:13px;line-height:1.75}
+  .example{font-size:12px;line-height:1.65}
+  .mobile-nav{position:fixed;display:flex;left:0;right:0;bottom:0;z-index:30;align-items:stretch;justify-content:space-around;gap:2px;padding:7px 7px calc(7px + env(safe-area-inset-bottom));min-height:66px;background:#151912f5;border-top:1px solid #ffffff12;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 -12px 32px #0003}
+  .mobile-nav button{flex:1;min-width:0;min-height:50px;padding:5px 2px 4px;border:0;border-radius:13px;background:transparent;color:#899181;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:9px;font-weight:600;letter-spacing:.1px}
+  .mobile-nav button span:first-child{font-size:19px;line-height:1.15}
+  .mobile-nav button.active{color:var(--accent);background:#c3d58b12}
+  .mobile-nav button:active{transform:scale(.96)}
+  .empty{padding:30px 17px}
+}
+@media(min-width:681px) and (max-width:950px){
+  .topbar{padding-inline:24px}
+  .content{padding:30px 24px 70px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
 </style>
 </head>
 <body>
@@ -29,7 +135,7 @@
   <div class="sidebar-bottom"><strong>A curious mind, every day.</strong><span class="tiny">Small lessons. Sharper thinking. A wider view of the world.</span></div>
 </aside>
 <main class="main">
-<header class="topbar"><div class="crumb" id="breadcrumb">Your learning space <span style="color:#626b5b"> / </span> Home</div><div class="top-actions"><div class="streak">✦ <b id="streakTop">0</b> day streak</div><div class="avatar">T</div></div></header>
+<header class="topbar"><a class="mobile-brand" href="#" data-goto="home" aria-label="Talist home"><span class="brand-mark">T</span><span class="mobile-brand-name">talist</span></a><div class="crumb" id="breadcrumb">Your learning space <span style="color:#626b5b"> / </span> Home</div><div class="top-actions"><div class="streak">✦ <b id="streakTop">0</b> day streak</div><div class="avatar">T</div></div></header>
 <div class="content">
 <section class="page active" id="page-home">
   <div class="hero"><div><div class="eyebrow">Your personal learning space</div><h1>Understand more.<br><span style="color:var(--accent)">See beyond.</span></h1><p>Explore the ideas behind how people think, behave and make sense of the world around them.</p></div><div class="date-note" id="todayLabel"></div></div>
@@ -66,7 +172,13 @@
 <section class="page" id="page-reader"><div class="reader" id="readerContent"></div></section>
 </div>
 </main>
-<nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-page="home"><span>⌂</span>Home</button><button data-page="explore"><span>⌕</span>Explore</button><button data-page="practice"><span>✳</span>Practice</button><button data-page="progress"><span>▥</span>Progress</button><button data-page="saved"><span>◇</span>Saved</button></nav>
+<nav class="mobile-nav" aria-label="Primary navigation">
+<button class="active" data-page="home" aria-label="Home" aria-current="page"><span aria-hidden="true">⌂</span><span>Home</span></button>
+<button data-page="explore" aria-label="Explore"><span aria-hidden="true">⌕</span><span>Explore</span></button>
+<button data-page="practice" aria-label="Practice"><span aria-hidden="true">✳</span><span>Practice</span></button>
+<button data-page="progress" aria-label="Progress"><span aria-hidden="true">▥</span><span>Progress</span></button>
+<button data-page="saved" aria-label="Saved lessons"><span aria-hidden="true">◇</span><span>Saved</span></button>
+</nav>
 </div>
 <script>
 const categories=[
@@ -86,15 +198,15 @@ const lessons=[
 {id:"hindsight-bias",title:"Hindsight bias",category:"Human behaviour",time:5,level:"Foundations",description:"Why outcomes can seem more predictable after we already know what happened.",lead:"Once an outcome is known, it can become difficult to remember how uncertain it seemed beforehand. The past may start to feel more predictable than it really was.",sections:[["The central idea","Hindsight bias is the tendency to see an event as having been more predictable after learning its outcome than it actually was before the outcome was known."],["A practical example","After a close match ends, a viewer says they knew all along which team would win. Before the match, however, they may have considered both outcomes plausible."],["Why it matters","Hindsight bias can distort how we evaluate decisions. A good decision can lead to a bad outcome, and a poor decision can sometimes lead to a good one. Judging only by the result hides the uncertainty present at the time."]],example:"When reviewing a decision, write down what you knew, what you expected and how confident you were before the outcome. Compare the record with what you remember afterwards.",takeaways:["Knowing the outcome changes how the past feels.","Separate decision quality from outcome quality.","Record predictions and uncertainty before results are known."]}
 ];
 const questions=[
-{q:"You believe a new study supports your opinion, so you share it immediately but dismiss studies that disagree. Which concept best describes this pattern?",a:["Availability heuristic","Confirmation bias","Hindsight bias","Cognitive dissonance"],correct:1,why:"Confirmation bias involves favouring information that supports existing beliefs and giving less weight to conflicting evidence."},
-{q:"Ice cream sales and swimming accidents both increase in summer. What is the most careful conclusion?",a:["Ice cream causes accidents","Accidents cause ice cream sales","The variables are associated; temperature may influence both","There is no relationship"],correct:2,why:"A correlation does not establish causation. A third variable, such as temperature, may influence both."},
-{q:"You see a wet coat and conclude its owner walked in the rain. What is the conclusion?",a:["A direct observation","An inference","A verified fact","A deductive proof"],correct:1,why:"The wet coat is observable. The explanation about rain is an inference, and alternative explanations are possible."},
-{q:"After a team wins, you say the result was obvious all along, although you were unsure beforehand. This is:",a:["Hindsight bias","Cognitive dissonance","Deduction","Confirmation bias"],correct:0,why:"Hindsight bias makes an outcome seem more predictable after we already know it."},
-{q:"Which statement best describes a sound deductive argument?",a:["It has a persuasive speaker","Its conclusion is popular","It is valid and its premises are true","It contains many examples"],correct:2,why:"Soundness requires both valid logical structure and true premises."}
+{id:"confirmation-bias-check",q:"You believe a new study supports your opinion, so you share it immediately but dismiss studies that disagree. Which concept best describes this pattern?",a:["Availability heuristic","Confirmation bias","Hindsight bias","Cognitive dissonance"],correct:1,why:"Confirmation bias involves favouring information that supports existing beliefs and giving less weight to conflicting evidence."},
+{id:"correlation-check",q:"Ice cream sales and swimming accidents both increase in summer. What is the most careful conclusion?",a:["Ice cream causes accidents","Accidents cause ice cream sales","The variables are associated; temperature may influence both","There is no relationship"],correct:2,why:"A correlation does not establish causation. A third variable, such as temperature, may influence both."},
+{id:"observation-check",q:"You see a wet coat and conclude its owner walked in the rain. What is the conclusion?",a:["A direct observation","An inference","A verified fact","A deductive proof"],correct:1,why:"The wet coat is observable. The explanation about rain is an inference, and alternative explanations are possible."},
+{id:"hindsight-check",q:"After a team wins, you say the result was obvious all along, although you were unsure beforehand. This is:",a:["Hindsight bias","Cognitive dissonance","Deduction","Confirmation bias"],correct:0,why:"Hindsight bias makes an outcome seem more predictable after we already know it."},
+{id:"deduction-check",q:"Which statement best describes a sound deductive argument?",a:["It has a persuasive speaker","Its conclusion is popular","It is valid and its premises are true","It contains many examples"],correct:2,why:"Soundness requires both valid logical structure and true premises."}
 ];
 const defaultState={completed:[],saved:[],answers:[],points:0,streak:0,lastActive:null,quizIndex:0,earnedQuestionXP:[],quizOrder:[]};
 let state=loadState(),activeFilter="All",searchTerm="",currentLesson=null,quizFeedback=null,currentPage="home",readerReturnPage="explore";
-function loadState(){try{const saved=JSON.parse(localStorage.getItem("talist-state-v1")||"{}");const merged={...defaultState,...saved};for(const key of ["completed","saved","answers","earnedQuestionXP","quizOrder"])if(!Array.isArray(merged[key]))merged[key]=[];merged.points=Math.max(0,Number(merged.points)||0);merged.streak=Math.max(0,Number(merged.streak)||0);merged.quizIndex=Math.max(0,Number(merged.quizIndex)||0);return merged}catch(e){return {...defaultState}}}
+function loadState(){try{const saved=JSON.parse(localStorage.getItem("talist-state-v1")||"{}");const validIds=new Set(lessons.map(l=>l.id));const merged={...defaultState,...(saved&&typeof saved==="object"?saved:{})};merged.completed=[...new Set((Array.isArray(merged.completed)?merged.completed:[]).filter(id=>validIds.has(id)))];merged.saved=[...new Set((Array.isArray(merged.saved)?merged.saved:[]).filter(id=>validIds.has(id)))];merged.answers=(Array.isArray(merged.answers)?merged.answers:[]).filter(v=>typeof v==="boolean");merged.earnedQuestionXP=Array.isArray(merged.earnedQuestionXP)?merged.earnedQuestionXP:[];merged.quizOrder=Array.isArray(merged.quizOrder)?merged.quizOrder.filter(i=>Number.isInteger(i)&&i>=0&&i<questions.length):[];merged.points=Math.max(0,Number.isFinite(Number(merged.points))?Number(merged.points):0);merged.streak=Math.max(0,Number.isFinite(Number(merged.streak))?Math.floor(Number(merged.streak)):0);merged.quizIndex=Math.max(0,Number.isFinite(Number(merged.quizIndex))?Math.floor(Number(merged.quizIndex)):0);if(typeof merged.lastActive!=="string")merged.lastActive=null;return merged}catch(e){return {...defaultState}}}
 function saveState(){try{localStorage.setItem("talist-state-v1",JSON.stringify(state))}catch(e){}}
 function localDate(date=new Date()){const y=date.getFullYear(),m=String(date.getMonth()+1).padStart(2,"0"),d=String(date.getDate()).padStart(2,"0");return `${y}-${m}-${d}`}
 function previousLocalDate(){const d=new Date();d.setDate(d.getDate()-1);return localDate(d)}
@@ -106,23 +218,23 @@ function renderExplore(){const filtered=lessons.filter(l=>(activeFilter==="All"|
 function renderSaved(){const list=lessons.filter(l=>state.saved.includes(l.id));document.getElementById("savedLessons").innerHTML=list.length?list.map(lessonCard).join(""):'<div class="empty" style="grid-column:1/-1">No saved lessons yet. Use the ◇ icon on any lesson to keep it here.</div>'}
 function renderContinue(){const next=lessons.find(l=>!state.completed.includes(l.id))||lessons[0];const allDone=state.completed.length>=lessons.length;document.getElementById("continueHeading").textContent=allDone?"Keep exploring":"Pick up where you left off";document.getElementById("continueMeta").textContent=allDone?"Revisit a useful concept":next.category+" · "+next.time+" min";document.getElementById("continueTitle").textContent=allDone?"Review your learning":next.title;document.getElementById("continueDescription").textContent=allDone?"You have completed the starter library. Revisit a lesson to refresh your understanding.":next.description;const button=document.getElementById("continueButton");button.dataset.open=next.id;button.textContent=(allDone?"Review lesson":"Continue learning")+" →"}
 function renderStats(){const answered=state.answers.length,correct=state.answers.filter(x=>x).length;document.getElementById("completedStat").textContent=state.completed.length;document.getElementById("accuracyStat").textContent=answered?Math.round(correct/answered*100)+"%":"—";document.getElementById("pointsStat").textContent=state.points+" XP";document.getElementById("streakTop").textContent=state.streak;document.getElementById("progressCompleted").textContent=state.completed.length;document.getElementById("progressCorrect").textContent=correct+" / "+answered;document.getElementById("progressPoints").textContent=state.points+" XP";const pct=Math.round(state.completed.length/lessons.length*100);document.getElementById("progressPercent").textContent=pct+"% explored";document.getElementById("progressBar").style.width=pct+"%";document.getElementById("progressCount").textContent=state.completed.length+" / "+lessons.length+" lessons"}
-function setPage(name){if(currentPage!=="reader"&&name!=="reader")readerReturnPage=name;currentPage=name;document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===name));const names={home:"Home",explore:"Explore",practice:"Practice",progress:"Progress",saved:"Saved lessons",reader:"Lesson"};document.getElementById("breadcrumb").innerHTML='Your learning space <span style="color:#626b5b"> / </span> '+(names[name]||"Home");window.scrollTo({top:0,behavior:"smooth"});if(name==="saved")renderSaved();if(name==="progress")renderStats();if(name==="practice")renderQuiz()}
+function setPage(name){if(currentPage!=="reader"&&name!=="reader")readerReturnPage=name;currentPage=name;document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));document.querySelectorAll("[data-page]").forEach(b=>{const active=b.dataset.page===name;b.classList.toggle("active",active);if(active)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});const names={home:"Home",explore:"Explore",practice:"Practice",progress:"Progress",saved:"Saved lessons",reader:"Lesson"};document.getElementById("breadcrumb").innerHTML='Your learning space <span style="color:#626b5b"> / </span> '+(names[name]||"Home");window.scrollTo({top:0,behavior:"smooth"});if(name==="saved")renderSaved();if(name==="progress")renderStats();if(name==="practice")renderQuiz()}
 function openLesson(id){const l=lessons.find(x=>x.id===id);if(!l)return;if(currentPage!=="reader")readerReturnPage=currentPage;currentLesson=id;const done=state.completed.includes(id);document.getElementById("readerContent").innerHTML=`<button class="back" data-back-reader>← Back</button><div class="eyebrow">${escapeHTML(l.category)} · ${l.time} min read</div><h1>${escapeHTML(l.title)}</h1><p class="lead">${escapeHTML(l.lead)}</p>${l.sections.map((s,i)=>`<section class="reader-section"><h2>${i+1}. ${escapeHTML(s[0])}</h2><p>${escapeHTML(s[1])}</p></section>`).join("")}<div class="example"><strong style="color:var(--accent)">Try this:</strong><br>${escapeHTML(l.example)}</div><section class="reader-section"><h2>Key takeaways</h2><ul class="takeaways">${l.takeaways.map(t=>`<li>${escapeHTML(t)}</li>`).join("")}</ul></section><div class="panel" style="padding:18px;display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:20px"><div><strong style="font-size:13px">${done?"Lesson completed":"Finished this lesson?"}</strong><div class="tiny">${done?"You can revisit it any time.":"Mark it complete to record your progress and earn 20 XP."}</div></div><button class="btn" data-complete="${id}" ${done?"disabled":""}>${done?"Completed ✓":"Mark complete"}</button></div><div class="notice">Starter learning content. Deeper research, references and editorial review will be added in a later content milestone.</div>`;setPage("reader")}
 function markComplete(id){if(!state.completed.includes(id)){state.completed.push(id);state.points+=20;recordLearningActivity();renderStats();renderContinue();openLesson(id)}}
 function toggleSave(id){state.saved=state.saved.includes(id)?state.saved.filter(x=>x!==id):[...state.saved,id];saveState();renderExplore();renderSaved();document.getElementById("featuredLessons").innerHTML=lessons.slice(0,3).map(lessonCard).join("")}
-function shuffledQuestionOrder(){return questions.map((_,i)=>i).sort(()=>Math.random()-.5)}
+function shuffledQuestionOrder(){const order=questions.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}return order}
 if(!state.quizOrder.length)state.quizOrder=shuffledQuestionOrder();
 function currentQuestion(){return questions[state.quizOrder[state.quizIndex%questions.length]]}
 function renderQuiz(){const q=currentQuestion(),answered=quizFeedback!==null;document.getElementById("quizArea").innerHTML=`<div class="question-meta"><span>QUESTION ${(state.quizIndex%questions.length)+1} OF ${questions.length}</span><span>+10 XP for a correct answer</span></div><h2>${escapeHTML(q.q)}</h2><div class="answers">${q.a.map((a,i)=>`<button class="answer ${answered?(i===q.correct?"correct":i===quizFeedback.choice?"wrong":""):""}" data-answer="${i}" ${answered?"disabled":""}><span style="color:var(--muted);margin-right:10px">${String.fromCharCode(65+i)}.</span>${escapeHTML(a)}</button>`).join("")}</div>${answered?`<div class="feedback"><strong>${quizFeedback.correct?"That's right.":"Not quite."}</strong> ${escapeHTML(q.why)}</div><button class="btn" data-next-quiz>Next question →</button>`:'<div class="tiny">Choose the best answer. You will see an explanation after responding.</div>'}`}
-function answerQuiz(choice){if(quizFeedback!==null)return;const q=currentQuestion(),correct=choice===q.correct;quizFeedback={choice,correct};state.answers.push(correct);recordLearningActivity();if(correct&&!state.earnedQuestionXP.includes(q.q)){state.points+=10;state.earnedQuestionXP.push(q.q)}saveState();renderQuiz();renderStats()}
+function answerQuiz(choice){if(quizFeedback!==null)return;const q=currentQuestion(),correct=choice===q.correct;quizFeedback={choice,correct};state.answers.push(correct);recordLearningActivity();const rewardKey=q.id||q.q;if(correct&&!state.earnedQuestionXP.includes(rewardKey)){state.points+=10;state.earnedQuestionXP.push(rewardKey)}saveState();renderQuiz();renderStats()}
 function updateActivityDate(){const today=localDate();document.getElementById("todayLabel").textContent=new Intl.DateTimeFormat("en",{weekday:"long",month:"long",day:"numeric"}).format(new Date());if(state.lastActive&&state.lastActive!==today&&state.lastActive!==previousLocalDate()){state.streak=0;saveState()}document.getElementById("streakTop").textContent=state.streak}
 document.addEventListener("click",e=>{const b=e.target.closest("button,[data-category]");if(!b)return;if(b.dataset.page){setPage(b.dataset.page);return}if(b.dataset.goto){setPage(b.dataset.goto);return}if(b.hasAttribute("data-back-reader")){setPage(readerReturnPage||"explore");return}if(b.dataset.open){openLesson(b.dataset.open);return}if(b.dataset.save){toggleSave(b.dataset.save);return}if(b.dataset.complete){markComplete(b.dataset.complete);return}if(b.dataset.answer!==undefined){answerQuiz(Number(b.dataset.answer));return}if(b.hasAttribute("data-next-quiz")){state.quizIndex++;if(state.quizIndex%questions.length===0)state.quizOrder=shuffledQuestionOrder();quizFeedback=null;saveState();renderQuiz();return}if(b.dataset.category){activeFilter=b.dataset.category;document.getElementById("searchInput").value="";searchTerm="";renderFilters();renderExplore();setPage("explore")}});
 function renderFilters(){document.getElementById("filters").innerHTML=["All",...categories.map(c=>c.id)].map(c=>`<button class="filter ${activeFilter===c?"active":""}" data-filter="${escapeHTML(c)}">${escapeHTML(c)}</button>`).join("")}
 document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(!b)return;activeFilter=b.dataset.filter;renderFilters();renderExplore()});
 document.getElementById("searchInput").addEventListener("input",e=>{searchTerm=e.target.value.toLowerCase().trim();renderExplore()});
-document.getElementById("exportProgress").addEventListener("click",()=>{const data={...state,exportedAt:new Date().toISOString(),app:"Talist"};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="talist-progress-backup.json";a.click();URL.revokeObjectURL(url)});
+document.getElementById("exportProgress").addEventListener("click",()=>{const data={...state,exportedAt:new Date().toISOString(),app:"Talist"};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="talist-progress-backup.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
 document.getElementById("importProgressButton").addEventListener("click",()=>document.getElementById("importProgressFile").click());
-document.getElementById("importProgressFile").addEventListener("change",async e=>{const file=e.target.files[0];if(!file)return;try{const imported=JSON.parse(await file.text());if(!imported||!Array.isArray(imported.completed)||!Array.isArray(imported.saved)||!Array.isArray(imported.answers)||!Number.isFinite(Number(imported.points))||!Number.isFinite(Number(imported.streak)))throw new Error("Invalid backup");const validIds=new Set(lessons.map(l=>l.id));state={...defaultState,...imported,completed:imported.completed.filter(id=>validIds.has(id)),saved:imported.saved.filter(id=>validIds.has(id)),answers:imported.answers.map(Boolean),earnedQuestionXP:Array.isArray(imported.earnedQuestionXP)?imported.earnedQuestionXP:[],quizOrder:Array.isArray(imported.quizOrder)?imported.quizOrder.filter(i=>Number.isInteger(i)&&i>=0&&i<questions.length):[]};saveState();alert("Progress imported successfully.");location.reload()}catch(err){alert("This file is not a valid Talist progress backup.")}finally{e.target.value=""}});
+document.getElementById("importProgressFile").addEventListener("change",async e=>{const file=e.target.files[0];if(!file)return;try{const imported=JSON.parse(await file.text());if(!imported||imported.app!=="Talist"||!Array.isArray(imported.completed)||!Array.isArray(imported.saved)||!Array.isArray(imported.answers)||!Number.isFinite(Number(imported.points))||Number(imported.points)<0||!Number.isFinite(Number(imported.streak))||Number(imported.streak)<0)throw new Error("Invalid backup");const validIds=new Set(lessons.map(l=>l.id));state={...defaultState,completed:[...new Set(imported.completed.filter(id=>validIds.has(id)))],saved:[...new Set(imported.saved.filter(id=>validIds.has(id)))],answers:imported.answers.filter(v=>typeof v==="boolean"),points:Math.floor(Number(imported.points)),streak:Math.floor(Number(imported.streak)),lastActive:typeof imported.lastActive==="string"?imported.lastActive:null,quizIndex:Number.isFinite(Number(imported.quizIndex))?Math.max(0,Math.floor(Number(imported.quizIndex))):0,earnedQuestionXP:Array.isArray(imported.earnedQuestionXP)?imported.earnedQuestionXP.filter(v=>typeof v==="string"):[],quizOrder:Array.isArray(imported.quizOrder)?imported.quizOrder.filter(i=>Number.isInteger(i)&&i>=0&&i<questions.length):[]};saveState();alert("Progress imported successfully.");location.reload()}catch(err){alert("This file is not a valid Talist progress backup.")}finally{e.target.value=""}});
 renderCategories();document.getElementById("featuredLessons").innerHTML=lessons.slice(0,3).map(lessonCard).join("");renderFilters();renderExplore();renderStats();renderContinue();updateActivityDate();renderQuiz();
 </script>
 </body>
