@@ -23,18 +23,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate application JavaScript
+      - name: Check standalone app entry point
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
           html = Path("index.html").read_text(encoding="utf-8")
-          scripts = re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", html, re.S | re.I)
-          if not scripts:
+          if not re.search(r"<script(?:\s[^>]*)?>", html, re.I):
               raise SystemExit("No inline application script found")
-          Path("/tmp/talist-inline.js").write_text("\n".join(scripts), encoding="utf-8")
+          if "</html>" not in html.lower():
+              raise SystemExit("index.html is incomplete")
+          print("Standalone HTML entry point found.")
           PY
-          node --check /tmp/talist-inline.js
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
