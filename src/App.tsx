@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import {
   Activity, ArrowDownRight, ArrowLeft, ArrowRight, BookOpen, Brain,
   Check, ChevronRight, CircleHelp, Compass, Eye, Flame, GraduationCap,
@@ -169,6 +169,6 @@ function LessonCard({ lesson, completed, onClick }: { lesson: Lesson; completed:
 }
 
 function ArrowUpRightIcon() { return <ArrowDownRight size={15} className="rotated-arrow" /> }
-function Stat({ icon, value, label }: { icon: React.ReactNode; value: string; label: string }) { return <div className="stat-card"><span>{icon}</span><strong>{value}</strong><small>{label}</small></div> }
+function Stat({ icon, value, label }: { icon: ReactNode; value: string; label: string }) { return <div className="stat-card"><span>{icon}</span><strong>{value}</strong><small>{label}</small></div> }
 
 export default App
